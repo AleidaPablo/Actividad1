@@ -1,0 +1,82 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    font-family: 'inter', sans-serif;
+    background-color: #fae1fd;
+    color: #2b2d42;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+.calculadora{
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    max-width: 500px;
+    width: 100%;
+}
+h2{
+    font-size: 22px;
+    color: #927dc1;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: Georgia;
+}
+.grupo-formulario{
+    margin-bottom: 18px;
+}
+.margen-resultado{
+    margin-top: 30px;
+    
+}
+label{
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 14px;
+}
+input{
+
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #8954fb;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: all 0.3s;
+}
+input :read-only{
+    background-color: #e9ecef;
+    cursor: not-allowed;
+}
+input:focus {
+    border-color:#927dc1;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(76,201,240,0.2);
+}
+.boton-convertir{
+    width: 100%;
+    background-color: #927dc1;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: 5px;
+}
+.boton-convertir:hover{
+    background-color: #2a0880;
+}
+.mensaje-error{
+    color: #d90429;
+    font-size: 13px;
+    margin-top: 6px;
+    display: none;
+}

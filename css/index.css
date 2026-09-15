@@ -1,0 +1,42 @@
+body{
+    font-family: Comic 'Gill Sans';
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fcd8f0;
+    color: #0b0b0b;
+}
+h1{
+    text-align: center;
+    color: #010406;
+    font-size: 40px;
+}
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+li{
+ margin: 10px 0;   
+}
+p{
+    text-align: center;
+    color: #010406;
+    font-size: 20px;
+}
+a{
+    display: block;
+    padding: 12px 16px;
+    background-color: #dfb5fa;
+    color: #000306;
+    text-decoration: none;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    font-family: 'Courier New';
+    transition: all 0.3s;
+    font-size: 15px;
+}
+a:hover{
+    background: #d708f2; 
+    transform: translateY(-2px);
+    color: aliceblue;
+}

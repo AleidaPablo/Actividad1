@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celsius-Fahrenheit</title>
+     <link rel="stylesheet" href="css/ejercicio10.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="calculadora">
+        <h2>Conversor de temperatura</h2>
+        <form id="formularioConversor" onsubmit="return false;">
+            <div class="grupo-formulario">
+                <label for="celsius"> Grados Celsius(°C):</label>
+                <input type="text" id="celsius" placeholder="Ej. 25" autocomplete="off">
+                <span id="error" class="mensaje-error"> Por favor ingrese un numero valido.</span>
+            </div>
+            <button type="button" id="boton-convertir" class="boton-convertir"> Convertir</button>
+            <div class="grupo-formulario margen-resultado">
+                <label for="fahrenheit"> Resultado (°F)</label>
+                <input type="text" id="fahrenheit" readonly placeholder="77°F">
+            </div>
+        </form>
+    </div>
+    <script src="js/ejercicio10.js"></script>
+</body>
+</html>
