@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesos MXN a USD</title>
+     <link rel="stylesheet" href="css/ejercicio12.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<!--Calculadora que convertira la cantidad de pesos mexicanos que introduzca el usuario a pesos estadounidences el cual tendra un .css que tendra el diseño de la calculadora y un js
+contendra la logica del funcionamiento-->
+</head>
+<body>
+    <div class="calculadora">
+        <h2>Conversor MXN a USD</h2>
+        <form id="formularioConversor" onsubmit="return false;">
+            <div class="grupo-formulario">
+                <label for="pMexicanos">Pesos Mexicanos MXN:</label>
+                <input type="text" id="mexicanos" placeholder="Ej. 25" autocomplete="off"><!--se le asigna un identificador que se usara en el js-->
+                <span id="error" class="mensaje-error"> Por favor ingrese un numero valido.</span><!--Texto de advertencia-->
+            </div>
+            <!--Boton y resultado que permite que en el js se le asigne el evento al darle click-->
+            <button type="button" id="boton-convertir" class="boton-convertir"> Convertir</button>
+            <div class="grupo-formulario margen-resultado">
+                <label for="pEstadounidences"> Resultado Pesos Estadounidences (USD)</label>
+                <input type="text" id="estadounidences" readonly placeholder="">
+            </div>
+        </form>
+    </div>
+    <script src="js/ejercicio12.js"></script>
+</body>
+</html>

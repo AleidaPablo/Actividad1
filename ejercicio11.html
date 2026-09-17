@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kilometros a Millas</title>
+     <link rel="stylesheet" href="css/ejercicio11.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="calculadora">
+        <h2>Conversor</h2>
+        <form id="formularioConversor" onsubmit="return false;">
+            <div class="grupo-formulario">
+                <label for="kilometros">    Kilometros (Km):</label>
+                <input type="text" id="kilometros" placeholder="Ej. 25" autocomplete="off"><!--se le asigna un identificador que se usara en el js-->
+                <span id="error" class="mensaje-error"> Por favor ingrese un numero valido.</span><!-- Texto de advertencia -->
+            </div>
+            <!--Boton y resultado-->
+            <button type="button" id="boton-convertir" class="boton-convertir"> Convertir</button>
+            <div class="grupo-formulario margen-resultado">
+                <label for="Millas"> Resultado (Mi)</label>
+                <input type="text" id="millas" readonly placeholder="">
+            </div>
+        </form>
+    </div>
+    <script src="js/ejercicio11.js"></script>
+</body>
+</html>
