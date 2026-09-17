@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #DDEBF7;
+    color: #4A4A4A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 30px 20px;
+}
+.contenedor {
+    background-color: #FFFDF8;
+    width: 100%;
+    max-width: 500px;
+    padding: 35px;
+    border-radius: 28px;
+    box-shadow: 0 12px 30px rgba(100, 100, 120, 0.15);
+}
+h2 {
+    text-align: center;
+    font-family: Georgia, serif;
+    font-size: 28px;
+    color: #A68BC4;
+    margin-bottom: 30px;
+}
+.grupo-formulario {
+    margin-bottom: 18px;
+}
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #01090f;
+}
+input {
+    width: 100%;
+    padding: 13px;
+    border: 2px solid #D8C8E8;
+    border-radius: 12px;
+    background-color: #FDF4F6;
+    color: #555555;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    transition: 0.3s;
+}
+input:focus {
+    outline: none;
+    border-color: #e6bbe9;
+    box-shadow: 0 0 0 3px rgba(214, 112, 230, 0.892);
+}
+input:read-only {
+    background-color: #fafafa;
+    color: #71977F;
+    text-align: center;
+    font-weight: 600;
+}
+.mensaje-error {
+    display: none;
+    color: #C98998;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+.boton {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 12px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.agregar {
+    background-color: #D8C8E8;
+    color: #665378;
+}
+.agregar:hover {
+    background-color: #af66fd;
+    transform: translateY(-2px);
+    color: #fcfcfc;
+}
+.calcular {
+    background-color: #A8CDB5;
+    color: #496653;
+    margin: 10px 0 25px;
+}
+.calcular:hover {
+    background-color: #528b66;
+    transform: translateY(-2px);
+    color: #fbfcfd;
+}
+.lista-estudiantes {
+    background-color: #f3a2b3;
+    padding: 8px;
+    border-radius: 16px;
+    margin: 10px 0;
+    border: 2px solid #F2DDE1;
+}
+.lista-estudiantes h3 {
+    text-align: center;
+    color: #bc1f3f;
+    font-size: 17px;
+    margin-bottom: 12px;
+}
+#lista {
+    color: #666666;
+    font-size: 14px;
+    line-height: 1.8;
+}
+.estudiante {
+    background-color: #FFFDF8;
+    padding: 8px 12px;
+    border-radius: 9px;
+    margin-bottom: 7px;
+    display: flex;
+    justify-content: space-between;
+}
+.resultados {
+    background-color: #F0F6FA;
+    padding: 20px;
+    border-radius: 18px;
+    border: 2px solid #DDEBF7;
+}
