@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificar Edad</title>
+     <link rel="stylesheet" href="css/ejercicio13.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="calculadora">
+        <h2>Verificar Edad</h2>
+        <form id="formularioVerificar" onsubmit="return false;">
+            <div class="grupo-formulario">
+                <label for="edad">Ingresar Edad</label>
+                <input type="text" id="edad" placeholder="Escribir tu edad" autocomplete="off"><!--se le asigna un identificador que se usara en el js-->
+                <span id="error" class="mensaje-error"> Por favor ingrese un numero valido.</span><!--Texto de advertencia-->
+            </div>
+            <!--Boton y resultado que permite que en el js se le asigne el evento al darle click-->
+            <button type="button" id="boton-verificar" class="boton-verificar"> Verificar</button>
+            <div class="grupo-formulario margen-resultado">
+                <label for="resultado"> Resultado</label>
+                <input type="text" id="resultado" readonly placeholder="">
+            </div>
+        </form>
+    </div>
+    <script src="js/ejercicio13.js"></script>
+</body>
+</html>

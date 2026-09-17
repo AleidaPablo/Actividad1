@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Estudiantes</title>
+
+    <link rel="stylesheet" href="css/ejercicio15.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="contenedor">
+        <h2>Registro de Estudiantes</h2>
+        <form id="formularioEstudiantes" onsubmit="return false;">
+            <div class="grupo-formulario">
+                <label for="nombre">Nombre del estudiante</label>
+                <input type="text" id="nombre" placeholder="Escribe el nombre" autocomplete="off">
+            </div>
+            <div class="grupo-formulario">
+                <label for="calificacion">Calificación</label>
+                <input type="text" id="calificacion" placeholder="Escribe la calificación" autocomplete="off">
+            </div>
+            <span id="error" class="mensaje-error">Por favor ingresar los datos</span>
+            <button type="button" id="boton-agregar" class="boton agregar">Agregar estudiante</button>
+            <div class="lista-estudiantes">
+                <h3>Estudiantes registrados</h3>
+                <div id="lista"></div>
+            </div>
+            <button  type="button" id="boton-calcular"  class="boton calcular">Calcular</button>
+            <div class="resultados">
+                <div class="grupo-formulario">
+                    <label for="promedio">Calificación promedio</label>
+                    <input type="text" id="promedio" readonly>
+                </div>
+                <div class="grupo-formulario">
+                    <label for="mayor">Calificación más alta</label>
+                    <input  type="text"  id="mayor" readonly>
+                </div>
+                <div class="grupo-formulario">
+                    <label for="menor">Calificación más baja</label>
+                    <input type="text" id="menor" readonly>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="js/ejercicio15.js"></script>
+</body>
+</html>
