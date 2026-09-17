@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Inter', sans-serif;
+    background-color:  #DCC3AA;
+    color: #5C4636;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 25px;
+}
+.contenedor {
+    background-color: #FFF9F2;
+    width: 100%;
+    max-width: 520px;
+    padding: 35px;
+    border-radius: 28px;
+    box-shadow: 0 12px 30px rgba(92, 70, 54, 0.18);
+}
+h2 {
+    text-align: center;
+    font-family: Georgia, serif;
+    font-size: 28px;
+    color: #8B5E3C;
+    margin-bottom: 30px;
+}
+.grupo-formulario {
+    margin-bottom: 18px;
+}
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #9A7052;
+}
+input {
+    width: 100%;
+    padding: 13px;
+    border: 2px solid #D8BFA8;
+    border-radius: 12px;
+    background-color: #FFFDF9;
+    color: #5C4636;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    transition: 0.3s;
+}
+input:focus {
+    outline: none;
+    border-color: #B88968;
+    box-shadow: 0 0 0 3px rgba(184, 137, 104, 0.2);
+}
+#boton-agregar {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 12px;
+    background-color: #B88968;
+    color: #FFF9F2;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#boton-agregar:hover {
+    background-color: #9F6F4E;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(92, 70, 54, 0.2);
+}
+.lista-tareas {
+    background-color: #F5E8DB;
+    padding: 15px;
+    border-radius: 18px;
+    margin-top: 25px;
+    border: 2px solid #DEC7B1;
+}
+.lista-tareas h3 {
+    text-align: center;
+    color: #8B5E3C;
+    font-size: 17px;
+    margin-bottom: 12px;
+}
+.tarea {
+    background-color: #FFF9F2;
+    padding: 11px 12px;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #E3D0BD;
+}
+.tarea span {
+    word-break: break-word;
+    color: #604A38;
+}
+.boton-eliminar {
+    border: none;
+    border-radius: 9px;
+    padding: 8px 12px;
+    background-color: #D9A48F;
+    color: #6E3F2D;
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.boton-eliminar:hover {
+    background-color: #C88B72;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(92, 70, 54, 0.15);
+}
+.vacio {
+    text-align: center;
+    color: #9B8574;
+    font-size: 14px;
+    padding: 8px;
+}

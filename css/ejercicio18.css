@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #F3E5AB;
+    color: #5C4828;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+.contenedor {
+    width: 100%;
+    max-width: 550px;
+    background-color: #FFFDF5;
+    padding: 35px;
+    border-radius: 25px;
+    box-shadow: 0 10px 25px rgba(92, 72, 40, 0.18);
+}
+h1 {
+    text-align: center;
+    font-family: Georgia, serif;
+    font-size: 28px;
+    color: #9A6B16;
+    margin-bottom: 30px;
+}
+.grupo-formulario {
+    margin-bottom: 18px;
+}
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #8A641E;
+}
+.form-control {
+    border: 2px solid #E0BD5A;
+    background-color: #FFFFFF;
+    color: #5C4828;
+    border-radius: 10px;
+    padding: 12px;
+}
+.form-control:focus {
+    border-color: #C89524;
+    box-shadow: none;
+}
+.boton-agregar {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 12px;
+    background-color: #D9A441;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(92, 72, 40, 0.20);
+    transition: 0.3s;
+}
+.boton-agregar span {
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 5px;
+}
+.boton-agregar:hover {
+    background-color: #B98222;
+    color: #FFFFFF;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(92, 72, 40, 0.25);
+}
+.boton-agregar:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 8px rgba(92, 72, 40, 0.20);
+}
+.lista-contenedor {
+    margin-top: 25px;
+    padding: 18px;
+    background-color: #F8E8B0;
+    border: 2px solid #E0BD5A;
+    border-radius: 16px;
+}
+.lista-contenedor h2 {
+    text-align: center;
+    font-size: 18px;
+    color: #9A6B16;
+    margin-bottom: 15px;
+}
+#lista {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.elemento {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 12px;
+    background-color: #FFFFFF;
+    color: #5C4828;
+    margin-bottom: 8px;
+    border: 1px solid #DFC982;
+    border-radius: 10px;
+}
+.elemento:last-child {
+    margin-bottom: 0;
+}
+.elemento button {
+    border: none;
+    border-radius: 8px;
+    padding: 7px 12px;
+    background-color: #E2B45A;
+    color: #684A18;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.elemento button:hover {
+    background-color: #C89524;
+    color: #FFFFFF;
+    transform: translateY(-2px);
+}
